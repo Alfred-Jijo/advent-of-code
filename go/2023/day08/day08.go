@@ -1,9 +1,9 @@
 package main
 
 import (
+	"aoc/go/utils"
 	_ "embed"
 	"fmt"
-	"github.com/pemoreau/advent-of-code/go/utils"
 	"strings"
 	"time"
 )
