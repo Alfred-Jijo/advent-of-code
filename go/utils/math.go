@@ -1,5 +1,16 @@
 package utils
 
+import (
+	"golang.org/x/exp/constraints"
+)
+
+func Abs[T constraints.Integer | constraints.Float](x T) T {
+	if x < 0 {
+		return -x
+	}
+	return x
+}
+
 func GCD(a, b int) int {
 	for b != 0 {
 		a, b = b, a%b
