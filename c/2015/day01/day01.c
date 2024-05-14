@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
 	FILE *puzzle_input = fopen("puzzle_input.txt", "r");
