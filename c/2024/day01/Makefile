@@ -2,11 +2,13 @@ all: build run clean
 
 build:
 	gcc -o main.exe main.c -fsanitize=address -Iinclude
-	clear
+	@echo ""
+	@echo ""
 
 run:
 	./main.exe input.txt
 
 clean:
-	clear
+	@echo ""
+	@echo ""
 	rm -rf main.exe
