@@ -1,5 +1,12 @@
-default:
-	gcc -o main.exe main.c -fsanitize=address
+all: build run clean
+
+build:
+	gcc -o main.exe main.c -fsanitize=address -Iinclude
+	clear
+
+run:
+	./main.exe input.txt
 
 clean:
-	rm -Force main.exe
+	clear
+	rm -rf main.exe
